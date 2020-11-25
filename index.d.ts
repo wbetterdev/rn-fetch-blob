@@ -587,12 +587,6 @@ export interface RNFetchBlobConfig {
     indicator?: boolean;
 
     /**
-     * Set this property to true will allow the request create connection with server have self-signed SSL
-     * certification. This is not recommended to use in production.
-     */
-    trusty?: boolean;
-
-    /**
      * Set this property to true will only do requests through the WiFi interface, and fail otherwise.
      */
     wifiOnly?: boolean;

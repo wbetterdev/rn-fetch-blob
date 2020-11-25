@@ -229,12 +229,7 @@ public class RNFetchBlobReq extends BroadcastReceiver implements Runnable {
         OkHttpClient.Builder clientBuilder;
 
         try {
-            // use trusty SSL socket
-            if (this.options.trusty) {
-                clientBuilder = RNFetchBlobUtils.getUnsafeOkHttpClient(client);
-            } else {
-                clientBuilder = client.newBuilder();
-            }
+            clientBuilder = client.newBuilder();
 
             // wifi only, need ACCESS_NETWORK_STATE permission
             // and API level >= 21

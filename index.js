@@ -107,8 +107,6 @@ function wrap(path:string):string {
  *                   Request timeout in millionseconds, by default it's 60000ms.
  *         @property {boolean} followRedirect
  *                   Follow redirects automatically, default true
- *         @property {boolean} trusty
- *                   Trust all certificates
  *         @property {boolean} wifiOnly
  *                   Only do requests through WiFi. Android SDK 21 or above only.
  *

@@ -7,7 +7,6 @@ type RNFetchBlobConfig = {
   addAndroidDownloads : any,
   indicator : bool,
   followRedirect : bool,
-  trusty : bool,
   wifiOnly : bool
 };
 

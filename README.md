@@ -790,20 +790,6 @@ After `0.9.4`, the `Chunked` transfer encoding is disabled by default due to som
 RNFetchBlob.fetch('POST', 'http://example.com/upload', { 'Transfer-Encoding' : 'Chunked' }, bodyData)
 ```
 
-### Self-Signed SSL Server
-
-By default, rn-fetch-blob does NOT allow connection to unknown certification provider since it's dangerous. To connect a server with self-signed certification, you need to add `trusty` to `config` explicitly. This function is available for version >= `0.5.3`
-
-```js
-RNFetchBlob.config({
-  trusty : true
-})
-.fetch('GET', 'https://mysite.com')
-.then((resp) => {
-  // ...
-})
-```
-
 ### WiFi only requests
 
 If you wish to only route requests through the Wifi interface, set the below configuration.
